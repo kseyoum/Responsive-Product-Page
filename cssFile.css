@@ -1,0 +1,176 @@
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#header{
+	background-color: lightblue;
+	width: 100%;
+	text-align: center;
+}
+#itemName
+{
+	margin-left: 10px;
+	font-family: 'Titillium Web', sans-serif;
+
+}
+#itemName2
+{
+	display: none;
+}
+#BigPic img{
+
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+#promo{
+	width: 80%;
+	background-color: lightgreen;
+	text-align: center;
+	border-style: solid;
+	border-color: green;
+	margin-left: auto;
+	margin-right: auto;
+}
+#relatedProducts{
+	
+	width: 100%;
+}
+.pics{
+
+	width: 60%;
+	border-color: black;
+	border-style: solid;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+
+	position: relative;
+
+
+}
+/*.pics: hover .imgae
+{
+	overflow: hidden;
+
+	cursor: pointer;
+}*/
+.pics:hover .middle
+{
+	background: rgba(32,32,32,0.9);
+	
+}
+.middle
+{
+	width: 100%;
+	/*background-color: */
+	position: absolute;
+	text-align: center;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+.text
+{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left:0;
+	bottom:0;
+	right:0;
+	visibility: hidden;
+
+}
+.pics:hover .text
+{
+	visibility: visible;
+}
+.pics img {
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	
+
+}
+
+img {
+	width:100%;
+}
+
+	.clearFloat{
+		clear: both;
+	}
+
+@media (min-width: 768px)
+{
+	#itemName
+	{
+		display: none;
+	}
+	#itemName2
+	{
+		display: block;
+		font-family: 'Titillium Web', sans-serif;
+
+	}
+
+	#picPromo{
+		float: left;
+		text-align: center;
+	}
+	#BigPic img
+	{
+		width: 60%;
+	}
+	#promo{
+		width: 50%;
+		
+	}
+	#relatedProducts
+	{
+		width: 100%
+
+	}
+	.pics 
+	{
+		float:left;
+		width: 40%;
+		margin-left: 50px;
+		
+	}
+	.pics img
+	{
+		width: 90%;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		
+
+		
+	}
+}
+@media (min-width: 992px)
+{
+	#relatedProducts{
+		display: inline;
+		width: 100%;
+		text-align: center;
+
+	}
+	.clearFloat
+	{
+		clear: both;
+	}
+	.pics{
+		text-align: center;
+		width: 20%;
+		margin-left: 40px;
+
+	}
+
+
+}
+
